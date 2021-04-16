@@ -21,5 +21,5 @@ elixir "1. Básico.exs"
 [MIT](./LICENSE) &copy; [Mateus Aquino](https://www.linkedin.com/in/mateusaquino/)
 
 <!-- References -->
-[1](https://www.youtube.com/watch?v=pBNOavRoNL0)
-[2](https://elixirschool.com/en/)
+[1]: https://www.youtube.com/watch?v=pBNOavRoNL0
+[2]: https://elixirschool.com/en/
