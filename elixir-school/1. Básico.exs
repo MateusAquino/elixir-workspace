@@ -4,7 +4,7 @@ IO.puts("Hello world from Elixir @ #{name}' shell")
 
 IO.puts("Count " <> "#{[1]}" <> "#{2}" <> "3")
 
-#                                   hmm cool
+#                                   hmm that's a cool effect
 # lgcl tstng                        vvvvvv
 IO.puts("T: " <> "#{true}" <> "#{42 && nil}" <> " | #{5 == 5.0} | #{5 === 5.0}")
 
