@@ -7,6 +7,7 @@ Feel free to check (or maybe even add @ issues/prs) the content :)
 | -------- | ----------------------------- | ------------ |
 | ☑️        | Elixir Tutorial (Core Syntax) | [YouTube][1] |
 |          | Elixir School                 | [Website][2] |
+| ☑️        | Twitter Clone with Phoenix    | [YouTube][3] |
 
 ## 🚀 Run
 Some of the content above might be executable, if so, make sure you have elixir installed and run:
@@ -31,3 +32,4 @@ mix run    # execute
 <!-- References -->
 [1]: https://www.youtube.com/watch?v=pBNOavRoNL0
 [2]: https://elixirschool.com/en/
+[3]: https://www.youtube.com/watch?v=MZvmYaFkNJI
