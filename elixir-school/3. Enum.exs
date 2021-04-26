@@ -1,10 +1,3 @@
-# PrettyPrint
-defmodule Sys do
-  def log(str) do
-    IO.puts IO.ANSI.format([:bright, str])
-  end
-end
-
 # Enumeráveis
 # Com exceção das tuplas, todas as coleções são enumeráveis
 

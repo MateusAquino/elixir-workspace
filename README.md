@@ -15,6 +15,7 @@ Some of the content above might be executable, if so, make sure you have elixir 
 
 ```bash
 cd elixir-school
+elixirc "0. Utils.exs" # You might need to Compile this for some files to work
 elixir "1. Básico.exs"
 ```
 
