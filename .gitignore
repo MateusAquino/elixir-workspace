@@ -22,6 +22,8 @@ erl_crash.dump
 # Ignore package tarball (built via "mix hex.build").
 intro-*.tar
 
+# Custom workspace settings
+workspace.code-workspace
 
 # Temporary files for e.g. tests
 /tmp
