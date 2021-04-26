@@ -5,10 +5,10 @@ Feel free to check (or maybe even add @ issues/prs) the content :)
 ## 🎓 Content
 | Complete | Content                         | Link         |
 | -------- | ------------------------------- | ------------ |
-| ☑️        | Elixir Tutorial (Core Syntax)   | [YouTube][1] |
+| ☑️       | Elixir Tutorial (Core Syntax)   | [YouTube][1] |
 |          | Elixir School                   | [Website][2] |
-| ☑️        | Twitter Clone with Phoenix      | [YouTube][3] |
-|          | NextLevelWeek 5 - Trilha Elixir | [GitHub][4]  |
+| ☑️       | Twitter Clone with Phoenix      | [YouTube][3] |
+| ☑️       | NextLevelWeek 5 - Trilha Elixir | [GitHub][4]  |
 
 ## 🚀 Run
 Some of the content above might be executable, if so, make sure you have elixir installed and run:
