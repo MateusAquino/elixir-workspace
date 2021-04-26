@@ -25,7 +25,13 @@ try do IO.inspect {:ok, val} = tuple rescue MatchError -> IO.puts "Fail" end
 try do IO.inspect {:ok, val} = {:error} rescue MatchError -> IO.puts "Fail" end
 
 # Operador Pin
-# ??? rever
 IO.puts "\nOPERADOR PIN"
 x = 1
-try do IO.puts ^x = 2 rescue MatchError -> IO.puts "Fail" end
+try do IO.puts ^x = 1 rescue MatchError -> IO.puts "Fail" end # prints 1
+try do IO.puts ^x = 2 rescue MatchError -> IO.puts "Fail" end # prints Fail
+{x, ^x} = {2, 1} # da match em ^x = 1 (pinned) mas troca o valor de x para 2
+IO.puts x # prints 2
+
+key = "hello"
+try do IO.inspect %{^key => value} = %{"hello" => "world"} rescue MatchError -> IO.puts "Fail" end # works
+try do IO.inspect %{^key => value} = %{:hello  => "world"} rescue MatchError -> IO.puts "Fail" end # doesn't
