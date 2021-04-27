@@ -10,6 +10,7 @@ Feel free to check (or maybe even add @ issues/prs) the content :)
 | ☑️       | Twitter Clone with Phoenix      | [YouTube][3] |
 | ☑️       | NextLevelWeek 5 - Trilha Elixir | [GitHub][4]  |
 | ☑️       | Código, ecossistema e detalhes  | [YouTube][5] |
+| ☑️       | Entrevista com José Valim       | [YouTube][6] |
 
 ## 🚀 Run
 Some of the content above might be executable, if so, make sure you have elixir installed and run:
@@ -38,3 +39,4 @@ mix run    # execute
 [3]: https://www.youtube.com/watch?v=MZvmYaFkNJI
 [4]: https://github.com/MateusAquino/nlw5
 [5]: https://www.youtube.com/watch?v=9wxjZ4DjeAY
+[6]: https://www.youtube.com/watch?v=roc-5euwalY
