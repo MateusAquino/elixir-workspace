@@ -1,32 +1,36 @@
 defmodule Cache do
   use Agent
 
+  @behaviour MoneyBurner
+
   def start_link(args \\ %{}, opts \\ []) do
     args =
       args
+      |> Enum.into(Map.new())
       |> Map.put_new(:cache, %{})
       |> Map.put_new(:timers, %{})
+      |> Map.put_new(:ttl, 2000)
       |> Map.put_new(:money_burner, MoneyBurner)
 
     opts =
       opts
-      |> Keyword.put_new(:ttl, 2000)
       |> Keyword.put_new(:name, __MODULE__)
 
     state = %{
       cache: args[:cache],
       timers: args[:timers],
       money_burner: args[:money_burner],
-      ttl: opts[:ttl]
+      ttl: args[:ttl]
     }
 
     Agent.start_link(fn -> state end, opts)
   end
 
-  def cheap_read(pid, query) do
+  @impl true
+  def burn_money(pid \\ __MODULE__, query) do
     case Agent.get(pid, fn state -> get_in(state, [:cache, query]) end) do
       nil ->
-        {:ok, value} = Agent.get(pid, & &1.money_burner).burn_money(query)
+        value = Agent.get(pid, & &1.money_burner).burn_money(query)
         :ok = write(pid, query, value)
         value
 
